@@ -21,7 +21,8 @@ body {
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the navbar content */
+  justify-content: center;
+  /* Center the navbar content */
   z-index: 1000;
 }
 
@@ -45,10 +46,16 @@ body {
   text-decoration: none;
   display: inline-block;
   margin-right: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .navbar-button:hover {
   background-color: #777;
+}
+
+.navbar-button.active {
+  background-color: #007bff;
+  color: #fff;
 }
 
 .navbar ul {
@@ -69,9 +76,11 @@ body {
   text-align: center;
   padding: 0px;
   position: relative;
-  height: calc(100vh - 130px); /* Adjust height to fill the remaining space */
+  height: calc(100vh - 130px);
+  /* Adjust height to fill the remaining space */
   flex: 1;
-  padding-top: 60px; /* Adjust for navbar height */
+  padding-top: 60px;
+  /* Adjust for navbar height */
   overflow: auto;
 }
 
@@ -85,7 +94,8 @@ body {
   max-height: 200px;
   height: auto;
   display: block;
-  margin: 0 auto; /* Center the image */
+  margin: 0 auto;
+  /* Center the image */
 }
 
 /* Footer styles */
