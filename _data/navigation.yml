@@ -1,0 +1,7 @@
+# Navigation items for the site
+- text: Home
+  link: /
+  icon: home
+- text: Whalewharf
+  link: /Whalewharf/
+  icon: gamepad 

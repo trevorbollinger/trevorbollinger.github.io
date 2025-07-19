@@ -1,0 +1,35 @@
+# Site settings
+title: "boli.dev"
+description: "Trevor Bollinger's personal website"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://trevorbollinger.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Data files
+data_dir: _data
+
+# Collections
+collections:
+  data:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins (if needed later)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag 
