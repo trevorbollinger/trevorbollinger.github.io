@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Alagard';
-    src: url('../alagard.ttf') format('truetype');
+    src: url('assets/alagard.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
