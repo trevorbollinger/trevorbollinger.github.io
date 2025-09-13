@@ -124,6 +124,12 @@ body {
   font-family: var(--font-family-navbar) !important;
 }
 
+.logo {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
 /* Main content styles */
 #main {
   text-align: center;
@@ -188,10 +194,3 @@ a:hover {
   font-family: var(--font-family-navbar) !important;
 }
 
-/* Main page logo responsive styling */
-#main img {
-  max-width: 100%;
-  height: auto;
-  max-height: 60vh;
-  width: auto;
-}
