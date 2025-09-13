@@ -132,7 +132,7 @@ body {
 /* Main content styles */
 #main {
   text-align: center;
-  padding: 0px;
+  padding: 0px; 
   position: relative;
   flex: 1;
   padding-top: var(--navbar-height);
