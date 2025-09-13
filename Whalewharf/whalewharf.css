@@ -63,6 +63,7 @@ body {
 }
 
 .wwlogo {
+    max-width: 100%;
     width: 600px;
     height: auto;
     margin: 0px;
@@ -248,3 +249,4 @@ strong {
     border-top: 1px solid #4a341a;
     margin-top: 0;
 }
+

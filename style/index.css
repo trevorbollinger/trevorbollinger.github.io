@@ -187,3 +187,11 @@ a:hover {
 .navbar a {
   font-family: var(--font-family-navbar) !important;
 }
+
+/* Main page logo responsive styling */
+#main img {
+  max-width: 100%;
+  height: auto;
+  max-height: 60vh;
+  width: auto;
+}
