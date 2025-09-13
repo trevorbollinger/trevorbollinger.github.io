@@ -13,9 +13,7 @@ h1:not(.navbar *),
 h2:not(.navbar *),
 h3:not(.navbar *),
 h4:not(.navbar *),
-.footer {
-    font-family: 'Alagard', 'Segoe UI', 'Arial', sans-serif;
-}
+
 
 /* Ensure navbar elements are excluded from Alagard font */
 .navbar,
@@ -237,16 +235,3 @@ blockquote {
 strong {
     color: #e6b86a;
 }
-
-.footer {
-    width: 100%;
-    background: #2c1a08;
-    color: #e6b86a;
-    text-align: center;
-    padding: 20px 0 16px 0;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    border-top: 1px solid #4a341a;
-    margin-top: 0;
-}
-

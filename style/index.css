@@ -42,10 +42,9 @@ body {
   padding: 0;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   font-size: var(--font-size-base);
   line-height: 1.6;
 }
@@ -137,7 +136,6 @@ body {
   position: relative;
   flex: 1;
   padding-top: var(--navbar-height);
-  overflow: auto;
   background-color: var(--bg-primary);
   color: var(--text-primary);
 }
