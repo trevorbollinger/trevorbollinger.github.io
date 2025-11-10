@@ -1,0 +1,191 @@
+/* Custom Theme for Jellyfin - Based on ElegantFin v25.10.27 */
+/* Modified to have static drawer with no toggle */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --elegantFinFooterText: "Custom Theme v1.0";
+    color-scheme: dark;
+    --darkerGradientPoint: #111827;
+    --darkerGradientPointAlpha: rgba(17, 24, 39, .85);
+    --lighterGradientPoint: #1d2635;
+    --lighterGradientPointAlpha: rgba(29, 38, 53, .85);
+    --headerColor: rgba(30, 40, 54, .8);
+    --drawerColor: rgba(30, 40, 54, .9);
+    --borderColor: hsl(214, 13%, 32%);
+    --darkerBorderColor: hsl(214, 13%, 22%);
+    --lighterBorderColor: hsla(0, 0%, 100%, .2);
+    --selectorBackgroundColor: rgb(55, 65, 81);
+    --selectorBackgroundColorAlpha: rgba(55, 65, 81, .5);
+    --activeColorAlpha: rgba(119, 91, 244, .9);
+    --activeColor: rgb(119, 91, 244);
+    --osdSeekBarPlayedColor: var(--textColor);
+    --osdSeekBarBufferedColorAlpha: rgba(128, 128, 128, .5);
+    --osdSeekBarThumbColor: white;
+    --tableBodyColor: rgb(31 41 55 / 1);
+    --uiAccentColor: rgb(117 111 226);
+    --btnMiniPlayColor: rgb(41 154 93);
+    --btnMiniPlayBorderColor: rgb(50, 167, 105);
+    --btnDeleteColor: rgb(169, 29, 29);
+    --btnDeleteBorderColor: rgb(217, 84, 84);
+    --btnSubmitColor: rgb(61, 54, 178);
+    --btnSubmitBorderColor: rgb(117 111 226);
+    --checkboxCheckedBgColor: rgb(79, 70, 229);
+    --highlightOutlineColor: rgb(37, 99, 235);
+    --defaultBorder: var(--borderWidth) solid var(--borderColor);
+    --defaultLighterBorder: var(--borderWidth) solid var(--lighterBorderColor);
+    --textColor: rgb(209, 213, 219);
+    --dimTextColor: rgb(156, 163, 175);
+    --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
+    --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), 25%, var(--lighterGradientPoint));
+    --headerColorGradient: linear-gradient(180deg, rgba(30, 40, 54, .95) 30%, 55%, transparent 90%);
+    --headerColorGradientAlt: linear-gradient(180deg, rgba(30, 40, 54, 1), 70%, transparent);
+    --headerBlurMask: linear-gradient(180deg, white 50%, 85%, transparent);
+    --cardFooterGradient: linear-gradient(0deg, rgb(0 0 0 / 90%), 40%, transparent);
+    --topOSDGradient: linear-gradient(180deg, hsla(0, 0%, 0%, .8), 45%, hsla(0, 0%, 0%, 0));
+    --bottomOSDGradient: linear-gradient(0deg, hsla(0, 0%, 0%, .8), 45%, hsla(0, 0%, 0%, 0));
+    --hoverGradientV: linear-gradient(0deg, transparent, rgb(255 255 255 / 100%) 45%, rgb(255 255 255 / 100%) 55%, transparent);
+    --hoverGradientH: linear-gradient(90deg, transparent, rgb(255 255 255 / 100%) 45%, rgb(255 255 255 / 100%) 55%, transparent);
+    --itemBackdropMask: linear-gradient(180deg, rgba(0, 0, 0, .8), 75%, transparent);
+    --largerRadius: 1.25em;
+    --largeRadius: 1em;
+    --smallRadius: .5em;
+    --smallerRadius: .375em;
+    --borderWidth: .06em;
+    --borderWidthDouble: .12em;
+    --sidePadding: 3.3%;
+    --itemColumnGap: 1em;
+    --primaryItemPageNegativeSpace: 12vh;
+    --secondaryItemPageNegativeSpace: 35vh;
+    --blurSmallest: blur(2px);
+    --blurDefault: blur(5px);
+    --blurLarge: blur(10px);
+    --blurLargest: blur(20px);
+    --shadow: .1em .1em .15em hsla(0, 0%, 0%, .3);
+    --headerBlurLayerVisibility: "";
+    --headerBackground: var(--headerColorGradient);
+    --loginPageBgUrl: url("");
+    --loginPageText: "Sign in to continue";
+    --overlayPlayButtonPosition: 2.8em;
+    --iconPack: 'Material Icons Round', Material Icons;
+    --extraCardButtonsVisibility: none;
+    --libraryLabelVisibility: none;
+    --cardHoverEffect: "";
+    --appBarHeight: 5em;
+    --backdropPositionY: 50%;
+    --drawerWidth: 250px;
+}
+
+html {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 425;
+    font-style: normal;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+.layout-mobile {
+    --itemColumnGap: 0;
+    --headerColorGradient: var(--headerColorGradientAlt);
+    --blurLargest: blur(12px);
+    --headerBlurMask: linear-gradient(180deg, white 60%, 90%, transparent);
+}
+
+@font-face {
+    font-family: 'Material Icons Round';
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v267/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: var(--iconPack) !important;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    line-height: 1;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+/* ============================================
+   STATIC DRAWER MODIFICATIONS
+   ============================================ */
+
+/* Static left drawer - always visible */
+.layout-desktop .mainDrawer {
+    left: 0 !important;
+    top: 0 !important;
+    width: var(--drawerWidth) !important;
+    background: var(--drawerColor) !important;
+    z-index: 998 !important;
+    position: fixed !important;
+}
+
+/* Hide hamburger button */
+.layout-desktop .mainDrawerButton {
+    display: none !important;
+}
+
+/* Hide home button */
+.layout-desktop .headerHomeButton {
+    display: none !important;
+}
+
+/* Hide transition on page load */
+.layout-desktop .touch-menu-la.transition {
+    transition: none !important;
+}
+
+/* Shift content to the right */
+.layout-desktop .libraryPage {
+    margin-left: var(--drawerWidth) !important;
+}
+
+/* Fix for video player and login page - keep drawer visible */
+.layout-desktop .hide-scroll .mainDrawer,
+.layout-desktop .hideMainDrawer .mainDrawer {
+    left: 0 !important;
+}
+
+/* Lower drawer buttons */
+.layout-desktop .mainDrawer-scrollContainer {
+    margin-top: 95px !important;
+    margin-left: 10px !important;
+}
+
+.layout-mobile .mainDrawer-scrollContainer {
+    margin-top: 15px !important;
+}
+
+/* Fix for Jellyfin Media Player */
+.quickConnectSettingsContainer {
+    margin-left: var(--drawerWidth) !important;
+}
+
+/* Fix for collection items misalignment */
+.layout-desktop .collectionItems .collectionItemsContainer {
+    padding-left: 0% !important;
+}
+
+.layout-desktop .collectionItems .sectionTitleContainer {
+    padding-left: 0% !important;
+}
+
+/* ============================================
+   END STATIC DRAWER MODIFICATIONS
+   ============================================ */
+
+/* Continue with full ElegantFin theme below... */
+
