@@ -1,21 +1,38 @@
 ---
 layout: default
-title: Home
+title: Boli Development
+css: style/home.css
 ---
 
-<h1>Welcome to boli.dev!</h1><br>
-<p>Hello! Check out <a href="/Whalewharf/">Whalewharf</a>.</p>
+<div class="hero-section">
+  <h1 class="hero-title">Boli Development</h1>
+  <p class="hero-subtitle">Crafting practical, beautiful software experiences.</p>
+</div>
 
-<div class="apps-container">
-    <div class="app-card">
-        <h3>Horizons</h3>
-        <p>Track daylight hours, sunrise, and sunset times with precision. A beautiful utility for your daily planning.</p>
-        <a href="https://apps.apple.com/us/app/horizons-sunrise-sunset/id6758022726" target="_blank" class="app-link">View on App Store</a>
+<div class="feature-grid">
+  <div class="feature-card">
+    <h3>Horizons</h3>
+    <p>Track daylight hours, sunrise, and sunset times with precision. A simple and beautiful utility for your day.</p>
+    <div style="margin-top: 1rem">
+      <a href="https://apps.apple.com/us/app/horizons-sunrise-sunset/id6758022726" target="_blank" class="btn btn-primary" style="font-size: 0.9rem; padding: 8px 20px">App Store</a>
+      <a href="{{ '/Horizons/' | relative_url }}" class="btn" style="font-size: 0.9rem; padding: 8px 20px; border: 1px solid var(--border-color); margin-left: 10px">Details</a>
     </div>
+  </div>
 
-    <div class="app-card">
-        <h3>Wildlife Handbook</h3>
-        <p>The ultimate reference guide for hunting and tracking in RDR2. Everything you need to know about the wild.</p>
-        <a href="https://apps.apple.com/us/app/wildlife-handbook-for-rdr2/id1668591619" target="_blank" class="app-link">View on App Store</a>
+  <div class="feature-card">
+    <h3>Wildlife Handbook</h3>
+    <p>The ultimate reference guide for hunting and tracking in RDR2. Everything you need to know about the wild.</p>
+    <div style="margin-top: 1rem">
+      <a href="https://apps.apple.com/us/app/wildlife-handbook-for-rdr2/id1668591619" target="_blank" class="btn btn-primary" style="font-size: 0.9rem; padding: 8px 20px">App Store</a>
+      <a href="{{ '/RDR2-Handbook/' | relative_url }}" class="btn" style="font-size: 0.9rem; padding: 8px 20px; border: 1px solid var(--border-color); margin-left: 10px">Details</a>
     </div>
+  </div>
+
+  <div class="feature-card">
+    <h3>Whalewharf</h3>
+    <p>A generational RPG about shaping a coastal town. Currently in early development.</p>
+    <div style="margin-top: 1rem">
+      <a href="{{ '/Whalewharf/' | relative_url }}" class="btn" style="font-size: 0.9rem; padding: 8px 20px; border: 1px solid var(--border-color)">Learn More</a>
+    </div>
+  </div>
 </div>

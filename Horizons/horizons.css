@@ -1,0 +1,17 @@
+:root {
+  /* Horizons Theme Variables */
+  --accent-color: #f97316; /* Orange-500 */
+  --accent-glow: rgba(249, 115, 22, 0.4);
+
+  /* Deep blue/twilight background */
+  --bg-body: #0f172a;
+}
+
+body {
+  background-color: #0f172a;
+  background-image:
+    radial-gradient(circle at 85% 90%, rgba(249, 115, 22, 0.6) 0%, transparent 50%), radial-gradient(circle at 10% 20%, rgba(249, 115, 22, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 50% 120%, rgba(249, 115, 22, 0.3) 0%, transparent 60%);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}

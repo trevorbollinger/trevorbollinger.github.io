@@ -1,0 +1,48 @@
+:root {
+  /* Privacy Theme Variables */
+  --accent-color: #8b5cf6; /* Violet */
+  --accent-glow: rgba(139, 92, 246, 0.4);
+
+  --bg-body: #0a0a0a;
+}
+
+body {
+  background-color: #0a0a0a;
+  background-image:
+    radial-gradient(circle at 85% 90%, rgba(139, 92, 246, 0.5) 0%, transparent 50%), radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 50% 120%, rgba(139, 92, 246, 0.3) 0%, transparent 60%) !important;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.privacy-content {
+  background: var(--bg-card);
+  padding: 40px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  margin-top: 40px;
+}
+
+.privacy-content h2 {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.privacy-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.privacy-content li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent-color);
+  color: var(--text-secondary);
+}
+
+.privacy-content strong {
+  color: var(--text-primary);
+}

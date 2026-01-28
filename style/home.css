@@ -1,0 +1,8 @@
+body {
+  background-color: #000000;
+  background-image:
+    radial-gradient(circle at 85% 90%, rgba(231, 91, 5, 0.6) 0%, transparent 50%), radial-gradient(circle at 10% 20%, rgba(231, 91, 5, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 50% 120%, rgba(231, 91, 5, 0.3) 0%, transparent 60%);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}

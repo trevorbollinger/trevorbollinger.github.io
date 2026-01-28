@@ -1,24 +1,22 @@
 <nav class="navbar">
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/images/boli.png" width="28" height="28" alt="{{ site.title }}">
-    </a>
-    <ul>
-        <li>
-            <a class="navbar-button{% if page.url == '/' %} active{% endif %}" href="{{ site.baseurl }}/">
-                Home
-            </a>
-        </li>
-        <li>
-            <a class="navbar-button{% if page.url contains '/Whalewharf/' %} active{% endif %}"
-                href="{{ site.baseurl }}/Whalewharf/">
-                Whalewharf
-            </a>
-        </li>
-        <li>
-            <a class="navbar-button{% if page.url contains '/contact/' %} active{% endif %}"
-                href="{{ site.baseurl }}/contact/">
-                Contact
-            </a>
-        </li>
-    </ul>
+  <a class="navbar-brand" href="{{ site.baseurl }}/">
+    <img src="{{ site.baseurl }}/images/boli.png" width="28" height="28" alt="{{ site.title }}" />
+  </a>
+  <ul>
+    <li>
+      <a class="navbar-button{% if page.url == '/' %} active{% endif %}" href="{{ site.baseurl }}/"> Home </a>
+    </li>
+    <li>
+      <a class="navbar-button{% if page.url contains '/Horizons/' %} active{% endif %}" href="{{ site.baseurl }}/Horizons/"> Horizons </a>
+    </li>
+    <li>
+      <a class="navbar-button{% if page.url contains '/RDR2-Handbook/' %} active{% endif %}" href="{{ site.baseurl }}/RDR2-Handbook/"> RDR2 Handbook </a>
+    </li>
+    <li>
+      <a class="navbar-button{% if page.url contains '/Whalewharf/' %} active{% endif %}" href="{{ site.baseurl }}/Whalewharf/"> Whalewharf </a>
+    </li>
+    <li>
+      <a class="navbar-button{% if page.url contains '/contact/' %} active{% endif %}" href="{{ site.baseurl }}/contact/"> Contact </a>
+    </li>
+  </ul>
 </nav>
