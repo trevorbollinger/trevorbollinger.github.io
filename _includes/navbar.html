@@ -1,33 +1,24 @@
-<!-- DEBUG: Navbar include is working -->
-<!-- DEBUG: site.data.navigation exists: {{ site.data.navigation }} -->
-<!-- DEBUG: Navigation items count: {{ site.data.navigation.size }} -->
 <nav class="navbar">
     <a class="navbar-brand" href="{{ site.baseurl }}/">
         <img src="{{ site.baseurl }}/images/boli.png" width="28" height="28" alt="{{ site.title }}">
     </a>
     <ul>
-        <!-- TEMPORARY: Hardcoded navigation for testing -->
         <li>
             <a class="navbar-button{% if page.url == '/' %} active{% endif %}" href="{{ site.baseurl }}/">
                 Home
             </a>
         </li>
         <li>
-            <a class="navbar-button{% if page.url == '/Whalewharf/' %} active{% endif %}"
+            <a class="navbar-button{% if page.url contains '/Whalewharf/' %} active{% endif %}"
                 href="{{ site.baseurl }}/Whalewharf/">
                 Whalewharf
             </a>
         </li>
-
-        <!-- ORIGINAL: Dynamic navigation (not working) -->
-        {% for item in site.data.navigation %}
-        <!-- DEBUG: Processing item: {{ item.text }} -->
         <li>
-            <a class="navbar-button{% if page.url == item.link %} active{% endif %}"
-                href="{{ site.baseurl }}{{ item.link }}">
-                {{ item.text }}
+            <a class="navbar-button{% if page.url contains '/contact/' %} active{% endif %}"
+                href="{{ site.baseurl }}/contact/">
+                Contact
             </a>
         </li>
-        {% endfor %}
     </ul>
 </nav>

@@ -4,4 +4,7 @@
   icon: home
 - text: Whalewharf
   link: /Whalewharf/
-  icon: gamepad 
+  icon: gamepad
+- text: Contact
+  link: /contact/
+  icon: envelope
