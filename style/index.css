@@ -14,8 +14,8 @@
   --shadow-color: rgba(0, 0, 0, 0.3);
 
   /* Typography */
-  --font-family-primary: 'Segoe UI', 'Arial', sans-serif;
-  --font-family-navbar: 'Segoe UI', 'Arial', sans-serif;
+  --font-family-primary: "Segoe UI", "Arial", sans-serif;
+  --font-family-navbar: "Segoe UI", "Arial", sans-serif;
   --font-size-base: 16px;
   --font-size-small: 14px;
   --font-size-large: 18px;
@@ -132,15 +132,13 @@ body {
 /* Main content styles */
 #main {
   text-align: center;
-  padding: 0px; 
+  padding: 0px;
   position: relative;
   flex: 1;
   padding-top: var(--navbar-height);
   background-color: var(--bg-primary);
   color: var(--text-primary);
 }
-
-
 
 /* Footer styles */
 #footer {
@@ -191,4 +189,3 @@ a:hover {
 .navbar a {
   font-family: var(--font-family-navbar) !important;
 }
-
