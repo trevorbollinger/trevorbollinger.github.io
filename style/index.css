@@ -247,6 +247,8 @@ a:hover {
   padding: 40px;
   transition: var(--transition-smooth);
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-card:hover {
@@ -259,6 +261,29 @@ a:hover {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--text-primary);
+}
+
+.feature-card p {
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.card-actions {
+  margin-top: auto;
+  display: flex;
+  width: 100%;
+  gap: 12px;
+}
+
+.card-actions .btn {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 !important;
 }
 
 /* Screenshot Grid */
@@ -307,5 +332,77 @@ a:hover {
   }
   h2 {
     font-size: 1.8rem;
+  }
+}
+
+/* Mobile Navbar Styles */
+.navbar-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 1001;
+}
+
+.navbar-toggle .bar {
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: var(--transition-fast);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  /* Show toggle on mobile */
+  .navbar-toggle {
+    display: flex;
+  }
+
+  /* Use stronger selector to override .navbar ul */
+  .navbar .navbar-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .navbar.active .navbar-menu {
+    clip-path: inset(0 0 0 0);
+  }
+
+  .navbar-button {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+  }
+
+  /* Animate hamburger to X */
+  .navbar.active .navbar-toggle .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar.active .navbar-toggle .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar.active .navbar-toggle .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }

@@ -1,0 +1,22 @@
+:root {
+  /* Beacon Theme Variables - Teal */
+  --accent-color: #14b8a6; /* Teal-500 */
+  --accent-glow: rgba(20, 184, 166, 0.4);
+
+  /* Deep teal background */
+  --bg-body: #134e4a; /* Teal-900 */
+}
+
+body {
+  background-color: var(--bg-body);
+  background-image: radial-gradient(circle at 50% 0%, rgba(20, 184, 166, 0.15) 0%, transparent 60%), radial-gradient(circle at 0% 100%, rgba(20, 184, 166, 0.1) 0%, transparent 40%);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.hero-title.colored {
+  background: linear-gradient(135deg, #fff 20%, var(--accent-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
